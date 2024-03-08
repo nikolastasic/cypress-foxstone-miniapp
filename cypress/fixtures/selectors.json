@@ -1,0 +1,9 @@
+{
+    "loader": ".loader",
+    "loader_not_exist": "not.exist",
+    
+    "emailInput": "#input1",
+    "passwordInput": "#input2",
+    "loginBtn": "button[type=submit]"
+
+}
