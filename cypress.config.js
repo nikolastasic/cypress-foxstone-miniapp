@@ -5,6 +5,8 @@ module.exports = defineConfig({
     
     login_email: 'pata123@gmail.com',
     login_password: 'Sifra123',
+    firstName: 'tik',
+    lastName: 'tok'
   },
   e2e: {
     baseUrl: 'https://sso.foxstone.co',

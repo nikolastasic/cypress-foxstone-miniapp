@@ -4,6 +4,8 @@
     
     "emailInput": "#input1",
     "passwordInput": "#input2",
-    "loginBtn": "button[type=submit]"
+    "loginBtn": "button[type=submit]",
+
+    "topbar_name": ".topbar-name"
 
 }

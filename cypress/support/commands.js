@@ -23,6 +23,10 @@ import selectors from '../fixtures/selectors.json'
     cy.get(selectors.loader).should('not.exist');
  })    
 
+ Cypress.Commands.add('verifyUserProfileName',(firstName, lastName) => {
+   cy.get(selectors.topbar_name).contains(firstName+' '+lastName);
+})
+
 
 //
 //
