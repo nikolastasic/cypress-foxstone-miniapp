@@ -17,11 +17,11 @@ import {faker} from '@faker-js/faker'
 describe('example to-do app', () => {
   beforeEach(() => {
 
-    cy.login('Hej','Bree')
+    // cy.login('Hej','Bree')
 
-    cy.log('faker email: '+faker.internet.email())
+    // cy.log('faker email: '+faker.internet.email())
 
-    cy.log('email izm env-a je: '+Cypress.env('login_email')+'A sifra je: '+Cypress.env('login_password'), { log: false })
+    //cy.log('email izm env-a je: '+Cypress.env('login_email')+'A sifra je: '+Cypress.env('login_password'), { log: false })
 
     
 
