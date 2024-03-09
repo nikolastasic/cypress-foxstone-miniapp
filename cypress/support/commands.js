@@ -1,4 +1,4 @@
-import selectors from '../fixtures/selectors.json'
+import selectors from "../fixtures/selectors.json";
 
 // ***********************************************
 // This example commands.js shows you how to
@@ -12,21 +12,19 @@ import selectors from '../fixtures/selectors.json'
 //
 //
 // -- This is a parent command --
- Cypress.Commands.add('login', (email, password) => {
-    cy.get(selectors.emailInput).type(email);
-    cy.get(selectors.passwordInput).type(password);
-    cy.get(selectors.loginBtn).click();
+Cypress.Commands.add("login", (email, password) => {
+  cy.get(selectors.emailInput).type(email);
+  cy.get(selectors.passwordInput).type(password);
+  cy.get(selectors.loginBtn).click();
+});
 
-     })
+Cypress.Commands.add("waitPageToLoad", () => {
+  cy.get(selectors.loader).should("not.exist");
+});
 
- Cypress.Commands.add('waitPageToLoad',() => {
-    cy.get(selectors.loader).should('not.exist');
- })    
-
- Cypress.Commands.add('verifyUserProfileName',(firstName, lastName) => {
-   cy.get(selectors.topbar_name).contains(firstName+' '+lastName);
-})
-
+Cypress.Commands.add("verifyUserProfileName", (firstName, lastName) => {
+  cy.get(selectors.topbar_name).contains(firstName + " " + lastName);
+});
 
 //
 //

@@ -1,11 +1,10 @@
 {
-    "loader": ".loader",
-    "loader_not_exist": "not.exist",
-    
-    "emailInput": "#input1",
-    "passwordInput": "#input2",
-    "loginBtn": "button[type=submit]",
+  "loader": ".loader",
+  "loader_not_exist": "not.exist",
 
-    "topbar_name": ".topbar-name"
+  "emailInput": "#input1",
+  "passwordInput": "#input2",
+  "loginBtn": "button[type=submit]",
 
+  "topbar_name": ".topbar-name"
 }
