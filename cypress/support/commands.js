@@ -40,10 +40,6 @@ Cypress.Commands.add("selectTitle", (title) => {
   cy.get("select").select(title);
 });
 
-Cypress.Commands.add("getTitle", (title) => {
-  return titles[Math.floor(Math.random() * titles.length)];
-});
-
 Cypress.Commands.add("enterName", (firstName, lastName) => {
   cy.get(selectors.firstNameInput).type(firstName);
   cy.get(selectors.lastNameInput).type(lastName);

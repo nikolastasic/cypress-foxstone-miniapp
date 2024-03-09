@@ -10,8 +10,6 @@ let mobileNumber = "+381111222333";
 describe("Signup tests", () => {
   context("Front-end signup tests", () => {
     beforeEach(() => {
-      cy.log("Title: " + cy.getTitle().toString());
-
       cy.visit("en/signin");
       cy.waitPageToLoad();
     });
