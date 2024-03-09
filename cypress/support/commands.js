@@ -1,7 +1,5 @@
 import selectors from "../fixtures/selectors.json";
 
-const titles = ["Mr.", "Mrs."];
-
 Cypress.Commands.add("waitPageToLoad", () => {
   cy.get(selectors.loader).should("not.exist");
 });
@@ -71,4 +69,9 @@ Cypress.Commands.add("interceptVerificationPin", (text) => {
     const verification_phone_pin = xhr.response.body["verification_phone_pin"];
     cy.get(selectors.verificationPhonePinInput).type(verification_phone_pin);
   });
+});
+
+Cypress.Commands.add("waitProgressBar", () => {
+  cy.get(".progress-bar", { timeout: 12000 }).should("not.exist");
+  cy.waitPageToLoad();
 });

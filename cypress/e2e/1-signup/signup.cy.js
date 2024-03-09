@@ -30,6 +30,10 @@ describe("Signup tests", () => {
       cy.clickOnElementContainsText("Now");
       cy.selectCountryAndEnterMobileNumber(country, mobileNumber);
       cy.interceptVerificationPin();
+      cy.waitPageToLoad();
+      cy.location("pathname").should("equal", "/en/thank-you");
+      cy.waitProgressBar();
+      cy.location("pathname").should("equal", "/en/offerings");
     });
   });
 });
