@@ -6,10 +6,10 @@ module.exports = defineConfig({
     login_password: "Sifra123",
     firstName: "tik",
     lastName: "tok",
+    getPinUrl: "https://legacy-api.foxstone.co/api/join?lang=en",
   },
   e2e: {
     baseUrl: "https://sso.foxstone.co",
-    experimentalSessionAndOrigin: true,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },

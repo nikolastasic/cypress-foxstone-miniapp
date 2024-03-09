@@ -1,40 +1,74 @@
 import selectors from "../fixtures/selectors.json";
 
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-Cypress.Commands.add("login", (email, password) => {
-  cy.get(selectors.emailInput).type(email);
-  cy.get(selectors.passwordInput).type(password);
-  cy.get(selectors.loginBtn).click();
-});
+const titles = ["Mr.", "Mrs."];
 
 Cypress.Commands.add("waitPageToLoad", () => {
   cy.get(selectors.loader).should("not.exist");
 });
 
-Cypress.Commands.add("verifyUserProfileName", (firstName, lastName) => {
-  cy.get(selectors.topbar_name).contains(firstName + " " + lastName);
+Cypress.Commands.add("clickOnSubmitButton", () => {
+  cy.get(selectors.submitBtn).click();
+  cy.waitPageToLoad();
 });
 
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add("clickOnNextButton", () => {
+  cy.get(".btn").contains("Next");
+  cy.waitPageToLoad();
+});
+
+Cypress.Commands.add("login", (email, password) => {
+  cy.get(selectors.emailInput).type(email);
+  cy.get(selectors.passwordInput).type(password);
+  cy.clickOnSubmitButton();
+});
+
+Cypress.Commands.add("clickOnSignUp", () => {
+  cy.get(selectors.signupBtn).click();
+  cy.waitPageToLoad();
+});
+
+Cypress.Commands.add("signUp", (email, password) => {
+  cy.get(selectors.emailInput).type(email);
+  cy.get(selectors.passwordInput).type(password);
+  cy.get(selectors.termsAndConditionsCb).click({ force: true });
+  cy.clickOnSubmitButton();
+});
+
+Cypress.Commands.add("verifyUserProfileName", (firstName, lastName) => {
+  cy.get(selectors.topbarName).contains(firstName + " " + lastName);
+});
+
+Cypress.Commands.add("selectTitle", (title) => {
+  cy.get("select").select(title);
+});
+
+Cypress.Commands.add("getTitle", (title) => {
+  return titles[Math.floor(Math.random() * titles.length)];
+});
+
+Cypress.Commands.add("enterName", (firstName, lastName) => {
+  cy.get(selectors.firstNameInput).type(firstName);
+  cy.get(selectors.lastNameInput).type(lastName);
+});
+
+Cypress.Commands.add("clickOnElementContainsText", (text) => {
+  cy.contains(text).click();
+});
+
+Cypress.Commands.add(
+  "selectCountryAndEnterMobileNumber",
+  (country, mobileNumber) => {
+    cy.get(selectors.countrySelect).click();
+    cy.get(selectors.countryOption).contains(country).click();
+    cy.get(selectors.mobileNumberInput).type(mobileNumber);
+  }
+);
+
+Cypress.Commands.add("interceptVerificationPin", (text) => {
+  cy.intercept("PATCH", Cypress.env("getPinUrl")).as("getVerificationPhonePin");
+  cy.clickOnElementContainsText("Next");
+  cy.wait("@getVerificationPhonePin").then((xhr) => {
+    const verification_phone_pin = xhr.response.body["verification_phone_pin"];
+    cy.get(selectors.verificationPhonePinInput).type(verification_phone_pin);
+  });
+});

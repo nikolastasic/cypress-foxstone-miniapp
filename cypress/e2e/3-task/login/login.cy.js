@@ -7,7 +7,6 @@ describe("Login tests", () => {
 
     it("Successfull login", () => {
       cy.login(Cypress.env("login_email"), Cypress.env("login_password"));
-      cy.waitPageToLoad();
       cy.verifyUserProfileName(
         Cypress.env("firstName"),
         Cypress.env("lastName")
