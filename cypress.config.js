@@ -7,7 +7,12 @@ module.exports = defineConfig({
     login_password: "Sifra123",
     firstName: "tik",
     lastName: "tok",
-    getPinUrl: "https://legacy-api.foxstone.co/api/join?lang=en",
+    joinUrl: "https://legacy-api.foxstone.co/api/join?lang=en",
+    phoneVerificationUrl:
+      "https://legacy-api.foxstone.co/api/phone-verification?lang=en",
+    access_token: "",
+    verification_phone_pin: "",
+    user_id: "",
   },
   e2e: {
     baseUrl: "https://sso.foxstone.co",

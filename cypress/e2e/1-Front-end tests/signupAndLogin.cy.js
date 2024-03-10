@@ -6,14 +6,14 @@ let password = faker.internet.password();
 let firstName = faker.person.firstName();
 let lastName = faker.person.firstName();
 
-describe("Signup tests", () => {
-  context("Front-end signup tests", () => {
+describe("Signup process", () => {
+  context("Front-end tests", () => {
     beforeEach(() => {
       cy.visit("en/signin");
       cy.waitPageToLoad();
     });
 
-    it("Successfull signup", () => {
+    it("Successfull Signup", () => {
       cy.clickOnSignUp();
       cy.signUp(email, password);
       cy.selectTitle(testData.title);
@@ -32,6 +32,12 @@ describe("Signup tests", () => {
       cy.waitPageToLoad();
       cy.location("pathname").should("equal", "/en/thank-you");
       cy.waitProgressBar();
+      cy.location("pathname").should("equal", "/en/offerings");
+      cy.verifyUserProfileName(firstName, lastName);
+    });
+
+    it("Successfull Login", () => {
+      cy.login(email, password);
       cy.location("pathname").should("equal", "/en/offerings");
       cy.verifyUserProfileName(firstName, lastName);
     });
