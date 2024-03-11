@@ -8,6 +8,8 @@ module.exports = defineConfig({
     firstName: "tik",
     lastName: "tok",
     joinUrl: "https://legacy-api.foxstone.co/api/join?lang=en",
+    loginUrl:
+      "https://legacy-api.foxstone.co/api/challenge/credentials?lang=en",
     phoneVerificationUrl:
       "https://legacy-api.foxstone.co/api/phone-verification?lang=en",
     access_token: "",

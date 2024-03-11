@@ -1,7 +1,7 @@
 import selectors from "../fixtures/selectors.json";
 import { faker } from "@faker-js/faker";
 
-let deviceId = faker.datatype.uuid();
+const deviceId = faker.datatype.uuid();
 
 Cypress.Commands.add("waitPageToLoad", () => {
   cy.get(selectors.loader).should("not.exist");
@@ -72,7 +72,6 @@ Cypress.Commands.add("interceptVerificationPin", (text) => {
 
 Cypress.Commands.add("waitProgressBar", () => {
   cy.get(".progress-bar", { timeout: 12000 }).should("not.exist");
-  cy.waitPageToLoad();
 });
 
 Cypress.Commands.add("createUserAPI", (email, password) => {
@@ -183,7 +182,6 @@ Cypress.Commands.add(
         language: "en",
       },
     }).then((response) => {
-      cy.log("Response: " + response);
       expect(response.status).to.eq(200);
     });
   }
@@ -233,3 +231,21 @@ Cypress.Commands.add(
     });
   }
 );
+
+Cypress.Commands.add("loginUserAPI", (bearerToken, email, password, userId) => {
+  cy.request({
+    method: "POST",
+    url: Cypress.env("loginUrl"),
+    headers: {
+      Authorization: bearerToken,
+    },
+    body: {
+      email: email,
+      password: password,
+      foxstone_tracking_id: userId,
+      device_id: deviceId,
+    },
+  }).then((response) => {
+    expect(response.status).to.eq(201);
+  });
+});

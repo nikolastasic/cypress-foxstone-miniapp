@@ -16,22 +16,23 @@ describe("Signup process", () => {
     it("Successfull Signup", () => {
       cy.clickOnSignUp();
       cy.signUp(email, password);
-      cy.selectTitle(testData.title);
+      cy.selectTitle(testData.titles.mr);
       cy.enterName(firstName, lastName);
       cy.clickOnSubmitButton();
-      cy.clickOnElementContainsText(testData.discoverFoxstone);
-      cy.clickOnElementContainsText(testData.productInterestedIn);
-      cy.clickOnElementContainsText(testData.availableCapital);
+      cy.clickOnElementContainsText(testData.discoverMethod.press);
+      cy.clickOnElementContainsText(testData.productsInterestedIn.crowdlending);
+      cy.clickOnElementContainsText(testData.availableCapital.chf100k250k);
       cy.clickOnSubmitButton();
-      cy.clickOnElementContainsText(testData.firstInvestmentTime);
+      cy.clickOnElementContainsText(testData.firstInvestmentTime.later);
       cy.selectCountryAndEnterMobileNumber(
-        testData.country,
+        testData.countries.srb,
         testData.mobileNumber
       );
       cy.interceptVerificationPin();
       cy.waitPageToLoad();
       cy.location("pathname").should("equal", "/en/thank-you");
       cy.waitProgressBar();
+      cy.waitPageToLoad();
       cy.location("pathname").should("equal", "/en/offerings");
       cy.verifyUserProfileName(firstName, lastName);
     });

@@ -1,9 +1,35 @@
 {
-  "title": "Mr.",
-  "country": "Serbia",
+  "titles": {
+    "mr": "Mr.",
+    "mrs": "Mrs."
+  },
+  "countries": {
+    "srb": "Serbia"
+  },
   "mobileNumber": "+381111222333",
-  "discoverFoxstone": "Press",
-  "productInterestedIn": "Co-ownership",
-  "availableCapital": "CHF 10'000 to 25'000",
-  "firstInvestmentTime": "Now"
+  "discoverMethod": {
+    "press": "Press",
+    "flyer": "Flyer",
+    "wordOfMouth": "Word of mouth",
+    "google": "Google",
+    "socialMedia": "Social media"
+  },
+  "productsInterestedIn": {
+    "co-ownership": "Co-ownership",
+    "crowdlending": "Crowdlending",
+    "both": "Both"
+  },
+  "availableCapital": {
+    "chf10k25k": "CHF 10'000 to 25'000",
+    "chf25k100k": "CHF 25'000 to 100'000",
+    "chf100k250k": "CHF 100'000 to 250'000",
+    "chf250k500k": "CHF 250'000 to 500'000",
+    "chfMoreThan500k": "More than CHF 500'000",
+    "chf10k25kApiValue": "10k-25k"
+  },
+  "firstInvestmentTime": {
+    "now": "Now",
+    "in6to12months": "In 6 to 12 months",
+    "later": "Later"
+  }
 }

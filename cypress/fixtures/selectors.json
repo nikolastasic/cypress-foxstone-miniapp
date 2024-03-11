@@ -1,20 +1,16 @@
 {
   "loader": ".loader",
-
   "emailInput": "input[type='email']",
   "passwordInput": "input[type='password']",
   "submitBtn": "button[type='submit']",
   "topbarName": ".topbar-name",
-
   "signupBtn": ".sign-up-now > a",
   "termsAndConditionsCb": "input[type='checkbox']",
   "firstNameInput": "input[formcontrolname='firstName']",
   "lastNameInput": "input[formcontrolname='lastName']",
-
   "countrySelect": ".iti__arrow",
   "countryOption": ".iti__country-name",
   "mobileNumberInput": "#phone",
   "verificationPhonePinInput": "#smscode",
-
   "progressBar": ".progress-bar"
 }
