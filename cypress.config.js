@@ -3,10 +3,6 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   projectId: "rmn4p6",
   env: {
-    login_email: "pata123@gmail.com",
-    login_password: "Sifra123",
-    firstName: "tik",
-    lastName: "tok",
     joinUrl: "https://legacy-api.foxstone.co/api/join?lang=en",
     loginUrl:
       "https://legacy-api.foxstone.co/api/challenge/credentials?lang=en",
