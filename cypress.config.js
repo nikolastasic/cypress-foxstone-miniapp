@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: "rmn4p6",
+  projectId: "rnzhqd",
   env: {
     joinUrl: "https://legacy-api.foxstone.co/api/join?lang=en",
     loginUrl:
