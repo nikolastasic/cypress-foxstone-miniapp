@@ -58,6 +58,12 @@ Google Chrome: **chrome**, Mozilla Firefox: **firefox**, Microsoft Edge: **edge*
 ```
 
 
+## Project structure
+
+1. Test cases are stored under: cypress/e2e folder
+2. All necessary test data is stored under: cypress/fixtures
+3. All necessary commands are stored under: cypress/support/commands.js
+4. Also some importants constants are stored in project root path in cypress.config.js file (Config file)
 
 
 
