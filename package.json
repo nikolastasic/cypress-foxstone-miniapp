@@ -20,6 +20,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@bahmutov/cy-grep": "1.9.17",
     "@faker-js/faker": "^8.4.1",
     "cypress": "^12.17.3",
     "cypress-expect": "2.5.3",
@@ -28,6 +29,7 @@
     "stop-only": "3.3.1"
   },
   "dependencies": {
+    "director": "1.2.8",
     "prettier": "^3.2.5",
     "http-server": "0.12.3"
   }
