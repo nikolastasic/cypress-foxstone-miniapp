@@ -2,7 +2,7 @@ import { faker } from "@faker-js/faker";
 import testData from "../../fixtures/testData.json";
 
 let email = faker.internet.email();
-let password = faker.internet.password();
+let password = Cypress.env("validPassword");
 let firstName = faker.person.firstName();
 let lastName = faker.person.firstName();
 
@@ -32,7 +32,6 @@ describe("Front-end tests", () => {
       cy.waitPageToLoad();
       cy.location("pathname").should("equal", "/en/thank-you");
       cy.waitProgressBar();
-      cy.waitPageToLoad();
       cy.location("pathname").should("equal", "/en/offerings");
       cy.verifyUserProfileName(firstName, lastName);
     });

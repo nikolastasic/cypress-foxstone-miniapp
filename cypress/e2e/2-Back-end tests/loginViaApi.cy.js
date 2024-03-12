@@ -1,7 +1,7 @@
 import { faker } from "@faker-js/faker";
 
 const email = faker.internet.email();
-const password = faker.internet.password();
+const password = Cypress.env("validPassword");
 
 describe("Back-end tests", () => {
   context("Login process", () => {
