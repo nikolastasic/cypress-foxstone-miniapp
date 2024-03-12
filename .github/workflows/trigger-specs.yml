@@ -24,7 +24,7 @@ jobs:
 
       - name: Run selected specs 🏃
         # https://github.com/cypress-io/github-action
-        uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v6
         with:
           start: npm run start:ci
           wait-on: "http://localhost:8888"
