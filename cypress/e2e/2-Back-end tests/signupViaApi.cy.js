@@ -17,7 +17,7 @@ describe("Signup process", () => {
       const userId = Cypress.env("user_id");
 
       cy.agreeTermsAndConditionsAPI(bearerToken);
-      cy.sendNameAndTitleAPI(firstName, lastName); //removed bearer token
+      cy.sendNameAndTitleAPI(bearerToken, firstName, lastName);
       cy.sendPrefferedProductsAPI(
         bearerToken,
         testData.productsInterestedIn.crowdlending.toLowerCase()
