@@ -13,6 +13,10 @@ on:
 jobs:
   specs:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: ${{ github.workspace }}
     steps:
       - name: Print specs 🖨️
         env:
