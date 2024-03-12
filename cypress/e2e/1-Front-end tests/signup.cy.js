@@ -9,9 +9,9 @@ let lastName = faker.person.firstName();
 describe("Front-end tests", () => {
   context("Signup process", () => {
     beforeEach(() => {
-      cy.exec("localStorage.clear()");
-      cy.exec("sessionStorage.clear()");
-      cy.clearCookies();
+      cy.clearAllCookies(); // Clear all cookies
+      cy.clearAllLocalStorage();
+      cy.clearAllSessionStorage();
       cy.visit("en/signin");
       cy.waitPageToLoad();
     });
