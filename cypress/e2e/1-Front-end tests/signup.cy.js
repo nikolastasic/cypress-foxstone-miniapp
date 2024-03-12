@@ -9,6 +9,7 @@ let lastName = faker.person.firstName();
 describe("Front-end tests", () => {
   context("Signup process", () => {
     beforeEach(() => {
+      cy.clearCookies();
       cy.visit("en/signin");
       cy.waitPageToLoad();
     });
