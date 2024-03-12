@@ -2,16 +2,14 @@ import { faker } from "@faker-js/faker";
 import testData from "../../fixtures/testData.json";
 
 let email = faker.internet.email();
-let password = Cypress.env("validPasswordSignUp");
+let password = Cypress.env("validPassword");
 let firstName = faker.person.firstName();
 let lastName = faker.person.firstName();
 
 describe("Front-end tests", () => {
   context("Signup process", () => {
     beforeEach(() => {
-      cy.clearAllCookies(); // Clear all cookies
-      cy.clearAllLocalStorage();
-      cy.clearAllSessionStorage();
+      cy.clearAllCookiesAndStorage();
       cy.visit("en/signin");
       cy.waitPageToLoad();
     });
@@ -35,6 +33,7 @@ describe("Front-end tests", () => {
       cy.waitPageToLoad();
       cy.location("pathname").should("equal", "/en/thank-you");
       cy.waitProgressBar();
+      cy.location("pathname").should("equal", "/en/offerings");
       cy.verifyUserProfileName(firstName, lastName);
     });
   });

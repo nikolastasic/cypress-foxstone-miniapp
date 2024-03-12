@@ -9,6 +9,7 @@ let lastName = faker.person.firstName();
 describe("End to End tests", () => {
   context("Complete Signup and Login proccess", () => {
     beforeEach(() => {
+      cy.clearAllCookiesAndStorage();
       cy.visit("en/signin");
       cy.waitPageToLoad();
     });
@@ -32,6 +33,7 @@ describe("End to End tests", () => {
       cy.waitPageToLoad();
       cy.location("pathname").should("equal", "/en/thank-you");
       cy.waitProgressBar();
+      cy.location("pathname").should("equal", "/en/offerings");
       cy.verifyUserProfileName(firstName, lastName);
     });
 

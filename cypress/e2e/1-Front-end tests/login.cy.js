@@ -1,6 +1,7 @@
 describe("Front-end tests", () => {
   context("Login process", () => {
     beforeEach(() => {
+      cy.clearAllCookiesAndStorage();
       cy.visit("en/signin");
       cy.waitPageToLoad();
     });

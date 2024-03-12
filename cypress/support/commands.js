@@ -3,6 +3,12 @@ import { faker } from "@faker-js/faker";
 
 const deviceId = faker.datatype.uuid();
 
+Cypress.Commands.add("clearAllCookiesAndStorage", () => {
+  cy.clearAllCookies();
+  cy.clearAllLocalStorage();
+  cy.clearAllSessionStorage();
+});
+
 Cypress.Commands.add("waitPageToLoad", () => {
   cy.get(selectors.loader).should("not.exist");
 });
