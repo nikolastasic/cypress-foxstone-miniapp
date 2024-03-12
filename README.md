@@ -8,7 +8,7 @@ A brief description of what this project does and who it's for.
 
 This mini-application is used to test the "Signup" and "Login" process on the "Foxstone" test environment.
 
-The tests were written mainly in javascript using the cypress framework.
+The tests were written mainly in Javascript using the Cypress framework.
 ## Run Locally
 
 In order for the project to run locally, it is necessary to have node.js version **18** or higher, as well as npm version **10** or higher (In my case, the following versions are:
