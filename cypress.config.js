@@ -5,6 +5,7 @@ module.exports = defineConfig({
   env: {
     validEmail: "foxstone123@yahoo.com",
     validPassword: "Password123",
+    validPasswordSignUp: "321Foxstone",
     validFirstName: "John",
     validLastName: "Doe",
     joinUrl: "https://legacy-api.foxstone.co/api/join?lang=en",

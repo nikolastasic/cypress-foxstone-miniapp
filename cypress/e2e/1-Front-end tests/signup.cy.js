@@ -2,7 +2,7 @@ import { faker } from "@faker-js/faker";
 import testData from "../../fixtures/testData.json";
 
 let email = faker.internet.email();
-let password = Cypress.env("validPassword");
+let password = Cypress.env("validPasswordSignUp");
 let firstName = faker.person.firstName();
 let lastName = faker.person.firstName();
 
