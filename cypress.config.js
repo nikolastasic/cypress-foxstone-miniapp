@@ -18,7 +18,7 @@ module.exports = defineConfig({
   e2e: {
     //baseUrl: "https://sso.foxstone.co",
     baseUrl: "http://localhost:8888",
-    specPattern: "cypress/e2e/**/*spec.js",
+    specPattern: "**/*.cy.js",
 
     setupNodeEvents(on, config) {
       // implement node event listeners here
