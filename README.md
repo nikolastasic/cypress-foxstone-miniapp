@@ -62,12 +62,12 @@ Google Chrome: **chrome**, Mozilla Firefox: **firefox**, Microsoft Edge: **edge*
 
 1. Test cases are stored under:
 ```bash
-  cypress/e2e folder
+  cypress/e2e/..
 ```
 
 2. All necessary test data is stored under:
 ```bash
-  cypress/fixtures
+  cypress/fixtures/..
 ```
 
 3. All necessary commands are stored under:
