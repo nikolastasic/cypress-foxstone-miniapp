@@ -1,3 +1,6 @@
+#cypress-foxstone-miniapp#
+
+
 This mini-application is used to test the "Signup" and "Login" process on the "Foxstone" test environment.
 
 The tests were written mainly in javascript using the cypress framework.
