@@ -71,7 +71,7 @@ Cypress.Commands.add("interceptVerificationPin", (text) => {
 });
 
 Cypress.Commands.add("waitProgressBar", () => {
-  cy.wait(10000);
+  cy.wait(15000);
 });
 
 Cypress.Commands.add("createUserAPI", (email, password) => {
