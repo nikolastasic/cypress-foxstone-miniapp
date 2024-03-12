@@ -1,4 +1,4 @@
-# cypress-foxstone-miniapp
+# cypress-foxstone-miniapp  [![cypress-foxstone-miniapp](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/detailed/rnzhqd/master&style=flat&logo=cypress)](https://cloud.cypress.io/projects/rnzhqd/runs)
 
 
 This mini-application is used to test the "Signup" and "Login" process on the "Foxstone" test environment.
