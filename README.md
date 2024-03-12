@@ -65,11 +65,21 @@ Google Chrome: **chrome**, Mozilla Firefox: **firefox**, Microsoft Edge: **edge*
   cypress/e2e folder
 ```
 
-2. 
+2. All necessary test data is stored under:
+```bash
+  cypress/fixtures
+```
 
-3. All necessary test data is stored under:  cypress/fixtures
-4. All necessary commands are stored under: cypress/support/commands.js
-5. Also some importants constants are stored in project root path in cypress.config.js file (Config file)
+3. All necessary commands are stored under:
+```bash
+  cypress/support/commands.js
+```
+
+4. Also some importants constants are stored in project root path in Config file:
+```bash
+  cypress.config.js
+```
+
 
 
 
