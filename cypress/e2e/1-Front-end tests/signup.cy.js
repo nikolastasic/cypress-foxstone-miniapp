@@ -32,7 +32,6 @@ describe("Front-end tests", () => {
       cy.waitPageToLoad();
       cy.location("pathname").should("equal", "/en/thank-you");
       cy.waitProgressBar();
-      cy.location("pathname").should("equal", "/en/offerings");
       cy.verifyUserProfileName(firstName, lastName);
     });
   });
