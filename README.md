@@ -1,5 +1,5 @@
 
-# cypress-foxstone-miniapp
+# cypress-foxstone-miniapp <img alt="Static Badge" src="https://img.shields.io/badge/cypress.io-black?logo=cypress&logoColor=%2369D3A7">
 
 A brief description of what this project does and who it's for.
 
