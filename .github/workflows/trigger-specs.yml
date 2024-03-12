@@ -17,14 +17,14 @@ jobs:
       - name: Print specs 🖨️
         env:
           SPECS: ${{ toJson(github.event.inputs.specs) }}
-        run: echo "$SPECS"
+        run: echo "$SPECS" echo "$GITHUB_ACTION_PATH" >> $GITHUB_PATH
 
       - name: Checkout 🛎
         uses: actions/checkout@v3
 
       - name: Run selected specs 🏃
         # https://github.com/cypress-io/github-action
-        uses: cypress-io/github-action@v6
+        uses: cypress-io/github-action@v5
         with:
           start: npm run start:ci
           wait-on: "http://localhost:8888"
