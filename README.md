@@ -12,7 +12,7 @@ The tests were written mainly in javascript using the cypress framework.
 ## Run Locally
 
 In order for the project to run locally, it is necessary to have node.js version **18** or higher, as well as npm version **10** or higher (In my case, the following versions are:
- node.js version **20.11.1**, npm version **10.2.4**)
+ node.js version:**20.11.1**, npm version:**10.2.4**)
 
 Clone the project
 
