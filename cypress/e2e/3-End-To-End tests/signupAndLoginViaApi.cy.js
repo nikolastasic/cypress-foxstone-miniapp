@@ -6,8 +6,8 @@ const password = faker.internet.password();
 const firstName = faker.person.firstName();
 const lastName = faker.person.firstName();
 
-describe("Signup process", () => {
-  context("Back-end tests", () => {
+describe("End to End tests", () => {
+  context("Complete Signup and Login proccess via API", () => {
     before(() => {
       cy.createUserAPI(email, password);
     });

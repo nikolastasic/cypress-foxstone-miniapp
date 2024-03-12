@@ -6,8 +6,8 @@ let password = faker.internet.password();
 let firstName = faker.person.firstName();
 let lastName = faker.person.firstName();
 
-describe("Complete signup and login proccess", () => {
-  context("Front-end tests", () => {
+describe("End to End tests", () => {
+  context("Complete Signup and Login proccess", () => {
     beforeEach(() => {
       cy.visit("en/signin");
       cy.waitPageToLoad();

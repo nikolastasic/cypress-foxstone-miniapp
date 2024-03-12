@@ -3,8 +3,8 @@ import { faker } from "@faker-js/faker";
 const email = faker.internet.email();
 const password = faker.internet.password();
 
-describe("Login process", () => {
-  context("Back-end tests", () => {
+describe("Back-end tests", () => {
+  context("Login process", () => {
     before(() => {
       cy.createUserAPI(email, password);
     });

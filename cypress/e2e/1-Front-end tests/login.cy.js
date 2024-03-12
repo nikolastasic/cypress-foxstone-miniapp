@@ -1,7 +1,5 @@
-import testData from "../../fixtures/testData.json";
-
-describe("Login process", () => {
-  context("Front-end tests", () => {
+describe("Front-end tests", () => {
+  context("Login process", () => {
     beforeEach(() => {
       cy.visit("en/signin");
       cy.waitPageToLoad();
