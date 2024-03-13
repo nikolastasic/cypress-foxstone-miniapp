@@ -84,7 +84,7 @@ Google Chrome: **chrome**, Mozilla Firefox: **firefox**, Microsoft Edge: **edge*
   cypress/support/commands.js
 ```
 
-4. Also some importants constants are stored in project root path in Config file:
+4. Also some important constants are stored in project root path in Config file:
 ```bash
   cypress.config.js
 ```
