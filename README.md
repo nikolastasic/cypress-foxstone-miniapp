@@ -1,5 +1,5 @@
 
-# cypress-foxstone-miniapp <img alt="Static Badge" src="https://img.shields.io/badge/cypress.io-black?logo=cypress&logoColor=%2369D3A7"> 
+# cypress-foxstone-miniapp ![Static Badge](https://img.shields.io/badge/cypress.io-black?style=plastic&logo=cypress&logoColor=%2369D3A7&link=https%3A%2F%2Fwww.cypress.io%2F) 
 
 
 
