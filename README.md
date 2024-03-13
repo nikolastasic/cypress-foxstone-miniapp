@@ -100,7 +100,7 @@ Tests can be run with [Github Actions](https://github.com/nikolastasic/cypress-f
 
 ## Test reporting
 
-This site was built using [View run in Cypress Cloud](https://cloud.cypress.io/projects/rnzhqd/runs?branches=%5B%5D&committers=%5B%5D&flaky=%5B%5D&page=1&status=%5B%5D&tags=%5B%5D&tagsMatch=ANY&timeRange=%7B%22startDate%22%3A%222023-03-13%22%2C%22endDate%22%3A%222024-03-12%22%7D).
+Cypress Cloud: [View test reports in Cypress Cloud](https://cloud.cypress.io/projects/rnzhqd/runs?branches=%5B%5D&committers=%5B%5D&flaky=%5B%5D&page=1&status=%5B%5D&tags=%5B%5D&tagsMatch=ANY&timeRange=%7B%22startDate%22%3A%222023-03-13%22%2C%22endDate%22%3A%222024-03-12%22%7D).
 ## Badges
 
 [![cypress-foxstone-miniapp](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/detailed/rnzhqd/master&style=flat&logo=cypress)](https://cloud.cypress.io/projects/rnzhqd/runs)
