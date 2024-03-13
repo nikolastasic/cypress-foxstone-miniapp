@@ -11,7 +11,6 @@ A brief description of what this project does and who it's for.
 This mini-application is used to test the "Signup" and "Login" process on the "Foxstone" test environment.
 
 The tests were written mainly in Javascript using the Cypress framework.
-## Run Locally
 
 In order for the project to run locally, it is necessary to have  <img alt="Static Badge" src="https://img.shields.io/badge/node.js-black?logo=nodedotjs&logoColor=%23339933">
   version **18** or higher, as well as  <img alt="Static Badge" src="https://img.shields.io/badge/npm-white?logo=npm&logoColor=%23CB3837">
@@ -19,6 +18,8 @@ In order for the project to run locally, it is necessary to have  <img alt="Stat
   <img alt="Static Badge" src="https://img.shields.io/badge/node.js-black?logo=nodedotjs&logoColor=%23339933">
   version: **20.11.1**,  <img alt="Static Badge" src="https://img.shields.io/badge/npm-white?logo=npm&logoColor=%23CB3837">
   version: **10.2.4**)
+
+## Run Locally  
 
 Go to the project directory
 
