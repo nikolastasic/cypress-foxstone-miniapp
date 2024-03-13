@@ -20,17 +20,19 @@ In order for the project to run locally, it is necessary to have  <img alt="Stat
   version: **20.11.1**,  <img alt="Static Badge" src="https://img.shields.io/badge/npm-white?logo=npm&logoColor=%23CB3837">
   version: **10.2.4**)
 
+Go to the project directory
+
+```bash
+  cd <my_project_directory>
+```
+
+
 Clone the project
 
 ```bash
   git clone https://github.com/nikolastasic/cypress-foxstone-miniapp.git
 ```
 
-Go to the project directory
-
-```bash
-  cd <my_project_directory>
-```
 
 Install dependencies
 
