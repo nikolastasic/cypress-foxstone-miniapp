@@ -50,20 +50,20 @@ npx cypress open
 Run single test
 
 ```bash
-npx cypress run --spec <name_of_test_to_be_executed>
+npx cypress run --spec <cypress/e2e/my-spec.cy.js>
 ```
 
 Run single test (Headless mode)
 
 ```bash
-npx cypress run --headless --spec <name_of_test_to_be_executed>
+npx cypress run --headless --spec <cypress/e2e/my-spec.cy.js>
 ```
 
 Run single test (Specify browser)
 Google Chrome: **chrome**, Mozilla Firefox: **firefox**, Microsoft Edge: **edge**
 
 ```bash
-cypress run --browser <browser_name>
+cypress run --browser <browser-name-or-path>
 ```
 
 
