@@ -77,7 +77,7 @@ Cypress.Commands.add("interceptVerificationPin", (text) => {
 });
 
 Cypress.Commands.add("waitProgressBar", () => {
-  cy.wait(15000);
+  cy.get(".progress-bar", { timeout: 20000 }).should("not.exist");
 });
 
 Cypress.Commands.add("createUserAPI", (email, password) => {
