@@ -24,46 +24,46 @@ In order for the project to run locally, it is necessary to have  <img alt="Stat
 Go to the project directory
 
 ```bash
-  cd <my_project_directory>
+cd <my_project_directory>
 ```
 
 
 Clone the project
 
 ```bash
-  git clone https://github.com/nikolastasic/cypress-foxstone-miniapp.git
+git clone https://github.com/nikolastasic/cypress-foxstone-miniapp.git
 ```
 
 
 Install dependencies
 
 ```bash
-  npm install
+npm install
 ```
 
 Open Cypress Dev tool (And run tests with UI)
 
 ```bash
-  npx cypress open
+npx cypress open
 ```
 
 Run single test
 
 ```bash
-  npx cypress run --spec <name_of_test_to_be_executed>
+npx cypress run --spec <name_of_test_to_be_executed>
 ```
 
 Run single test (Headless mode)
 
 ```bash
-  npx cypress run –headless –spec <name_of_test_to_be_executed>
+npx cypress run --headless --spec <name_of_test_to_be_executed>
 ```
 
 Run single test (Specify browser)
 Google Chrome: **chrome**, Mozilla Firefox: **firefox**, Microsoft Edge: **edge**
 
 ```bash
-  cypress run --browser <browser_name>
+cypress run --browser <browser_name>
 ```
 
 
@@ -71,22 +71,22 @@ Google Chrome: **chrome**, Mozilla Firefox: **firefox**, Microsoft Edge: **edge*
 
 1. Test cases are stored under:
 ```bash
-  cypress/e2e/..
+cypress/e2e/..
 ```
 
 2. All necessary test data is stored under:
 ```bash
-  cypress/fixtures/..
+cypress/fixtures/..
 ```
 
 3. All necessary commands are stored under:
 ```bash
-  cypress/support/commands.js
+cypress/support/commands.js
 ```
 
 4. Also some important constants are stored in project root path in Config file:
 ```bash
-  cypress.config.js
+cypress.config.js
 ```
 
 
