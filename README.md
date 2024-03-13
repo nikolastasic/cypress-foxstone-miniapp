@@ -12,12 +12,7 @@ This mini-application is used to test the "Signup" and "Login" process on the "F
 
 The tests were written mainly in Javascript using the Cypress framework.
 
-In order for the project to run locally, it is necessary to have  <img alt="Static Badge" src="https://img.shields.io/badge/node.js-black?logo=nodedotjs&logoColor=%23339933">
-  version **18** or higher, as well as  <img alt="Static Badge" src="https://img.shields.io/badge/npm-white?logo=npm&logoColor=%23CB3837">
-  version **10** or higher (In my case, the following versions are:
-  <img alt="Static Badge" src="https://img.shields.io/badge/node.js-black?logo=nodedotjs&logoColor=%23339933">
-  version: **20.11.1**,  <img alt="Static Badge" src="https://img.shields.io/badge/npm-white?logo=npm&logoColor=%23CB3837">
-  version: **10.2.4**)
+In order for the project to run locally, it is necessary to have  ![Static Badge](https://img.shields.io/badge/Node.js-black?style=plastic&logo=nodedotjs&logoColor=%23339933&link=https%3A%2F%2Fwww.cypress.io%2F)  version **18** or higher, as well as  ![Static Badge](https://img.shields.io/badge/npm-white?style=plastic&logo=npm&logoColor=%23CB3837&link=https%3A%2F%2Fwww.cypress.io%2F)  version **10** or higher (In my case, the following versions are:  ![Static Badge](https://img.shields.io/badge/Node.js-black?style=plastic&logo=nodedotjs&logoColor=%23339933&link=https%3A%2F%2Fwww.cypress.io%2F)  version: **20.11.1**,  ![Static Badge](https://img.shields.io/badge/npm-white?style=plastic&logo=npm&logoColor=%23CB3837&link=https%3A%2F%2Fwww.cypress.io%2F)  version: **10.2.4**)
 
 ## Run Locally  
 
